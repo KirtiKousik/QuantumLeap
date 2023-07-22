@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header start */
+header {
+  display: flex;
+  background-color: #222831;
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+}
+
+.logo h1 span:first-child {
+  padding: 0 0.5rem;
+  background-color: #00adb5;
+  font-size: 35px;
+}
+
+.logo h1 span:last-child {
+  color: #00adb5;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 8px;
+}
+
+.nav-link {
+  padding: 10px;
+  color: #eeee;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #00adb5;
+}
+
+.header-toggle,
+.header-close {
+  display: none;
+}
+/* header end */
+
+/* main section start */
+
+.form-container {
+  width: 60%;
+  margin: auto;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form label {
+  color: #00adb5;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-container form input {
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #00adb5;
+  background-color: #eeee;
+}
+
+.form-container form select {
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #00adb5;
+  background-color: #eeee;
+}
+
+.form-container form input[type="submit"] {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border-radius: 10px;
+  margin-block: 0.5rem;
+  border: 1px solid #00adb5;
+  background-color: #00adb5;
+  color: #eeee;
+}
+/* main section end */
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 58px;
+    justify-content: space-between;
+    padding: 0 28px;
+  }
+  .logo h1 {
+    font-size: 24px;
+  }
+  .header-toggle {
+    display: inline;
+    color: #eeee;
+    font-size: 24px;
+  }
+  .header-toggle:hover {
+    background-color: #00adb5;
+  }
+  .header-close {
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  .header-close:hover {
+    background-color: #00adb5;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #222831;
+    color: #eeee;
+    width: 60%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-item {
+    margin: 2rem 0;
+  }
+  .show {
+    right: 0;
+  }
+}
