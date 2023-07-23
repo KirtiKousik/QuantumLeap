@@ -170,7 +170,7 @@ header {
     right: 0;
   }
   .form-container {
-    padding-top: 20px;
-    width: 90%;
+    width: 100%;
+    padding: 1rem;
   }
 }
