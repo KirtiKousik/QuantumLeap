@@ -69,6 +69,7 @@ header {
 /* main section start */
 
 .form-container {
+  padding: 20px;
   width: 60%;
   margin: auto;
 }
