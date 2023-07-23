@@ -169,4 +169,8 @@ header {
   .show {
     right: 0;
   }
+  .form-container {
+    padding-top: 20px;
+    width: 90%;
+  }
 }
